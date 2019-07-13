@@ -34,3 +34,11 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+\.idea/
+
+\.vscode/
+
+Logs/
+
+Assets/Plugins/
