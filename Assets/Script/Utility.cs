@@ -13,10 +13,10 @@ namespace Script
 
         public static int GetQuadrantHashByPosition(float3 position, int cellSizes)
         {
-            return Hash(new float2(position.x, position.y), cellSizes);
+            return GetQuadrantHashByPosition(new float2(position.x, position.y), cellSizes);
         }
 
-        private static int Hash(float2 position, int cellSizes)
+        public static int GetQuadrantHashByPosition(float2 position, int cellSizes)
         {
             return Hash(Quantize(position, cellSizes));
         }
